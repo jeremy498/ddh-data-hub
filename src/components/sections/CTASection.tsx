@@ -16,7 +16,7 @@ export function CTASection({
   subtitle,
   primaryLabel = "Request Access",
   primaryHref = "/request-access",
-  secondaryLabel = "Book a 20-min call",
+  secondaryLabel = "Book a Call with Sales",
   secondaryHref = "/request-access",
 }: CTASectionProps) {
   return (
@@ -47,7 +47,7 @@ export function CTASection({
               <Button
                 variant="outline"
                 size="xl"
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
               >
                 <Calendar className="w-4 h-4" />
                 {secondaryLabel}
