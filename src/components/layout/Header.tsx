@@ -8,6 +8,7 @@ const navLinks = [
   { href: '/buyers', label: 'Buyers' },
   { href: '/partners', label: 'Partners' },
   { href: '/trust', label: 'Trust' },
+  { href: '/blog', label: 'Blog' },
 ];
 
 export function Header() {

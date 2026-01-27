@@ -8,6 +8,8 @@ import Buyers from "./pages/Buyers";
 import Partners from "./pages/Partners";
 import Trust from "./pages/Trust";
 import RequestAccess from "./pages/RequestAccess";
+import Blog from "./pages/Blog";
+import WhyConsentedDataMatters from "./pages/blog/WhyConsentedDataMatters";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +26,8 @@ const App = () => (
           <Route path="/partners" element={<Partners />} />
           <Route path="/trust" element={<Trust />} />
           <Route path="/request-access" element={<RequestAccess />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/why-consented-behavioral-data-matters-for-ai" element={<WhyConsentedDataMatters />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
