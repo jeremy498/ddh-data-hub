@@ -6,7 +6,7 @@ const products = [
     title: 'Private Data Brokerage',
     description: 'Bespoke datasets tailored to specific research or training needs.',
     whoFor: 'AI labs with unique data requirements',
-    engagement: 'Project-based, $50K–$500K+',
+    engagement: 'Project-based',
   },
   {
     icon: Users,
@@ -20,7 +20,7 @@ const products = [
     title: 'Data Pools',
     description: 'Subscription access to curated, continuously updated datasets.',
     whoFor: 'Enterprises needing ongoing data feeds',
-    engagement: 'Monthly subscription, $1K–$10K/mo',
+    engagement: 'Monthly subscription',
   },
 ];
 
