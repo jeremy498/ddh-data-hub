@@ -45,9 +45,8 @@ export function CTASection({
             </Link>
             <Link to={secondaryHref}>
               <Button
-                variant="outline"
                 size="xl"
-                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-primary"
               >
                 <Calendar className="w-4 h-4" />
                 {secondaryLabel}
