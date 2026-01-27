@@ -1,73 +1,42 @@
-# Welcome to your Lovable project
+# Digital Data Holdings
 
-## Project info
+**Consent-First Data Infrastructure for the Enterprise**
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Digital Data Holdings (DDH) provides the technology layer that enables large-scale, consented data exchange between individuals and businesses. We're building the infrastructure that makes data licensing transparent, auditable, and revocable by design.
 
-## How can I edit this code?
+## What We Do
 
-There are several ways of editing your application.
+DDH operates at the intersection of privacy and data utility. Our platform enables:
 
-**Use Lovable**
+- **Private Data Brokerage** — Facilitating compliant data licensing between consenting individuals and vetted enterprise buyers
+- **Consent-as-a-Service (CaaS)** — Providing the consent management infrastructure that powers purpose-limited data access
+- **Data Pools** — Aggregating consented data into analyst-ready datasets for market research, AI training, and behavioral insights
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Our Approach
 
-Changes made via Lovable will be committed automatically to this repo.
+We believe the future of data is permissioned. Every data point that moves through our infrastructure is:
 
-**Use your preferred IDE**
+- **Consented** — Individuals explicitly opt-in with full visibility into how their data will be used
+- **Purpose-Limited** — Data access is tied to specific, disclosed use cases
+- **Auditable** — Complete chain of custody from consent to access
+- **Revocable** — Individuals can withdraw consent at any time
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## For Data Buyers
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Access high-quality, consented datasets for market research, AI/ML training, and consumer insights. No regulatory gray areas. No reputational risk.
 
-Follow these steps:
+## For Data Partners
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Integrate with DDH to offer your users fair compensation for their data while maintaining trust and transparency.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Technology
 
-# Step 3: Install the necessary dependencies.
-npm i
+This marketing site is built with React, TypeScript, Vite, and Tailwind CSS.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Contact
 
-**Edit a file directly in GitHub**
+Interested in learning more? Visit [our website](#) to request access or book a call with our team.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+© 2025 Digital Data Holdings. All rights reserved.
