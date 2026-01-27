@@ -33,11 +33,6 @@ const deliverables = [
   { icon: Star, text: 'Optional exclusivity' },
 ];
 
-const pricing = [
-  { type: 'Pilot datasets', range: '$25K–$135K', note: 'depending on scope' },
-  { type: 'Subscription pools', range: '$1K–$10K/month', note: 'depending on access tier' },
-  { type: 'Enterprise programs', range: 'Custom', note: 'contact us' },
-];
 
 export default function Buyers() {
   return (
@@ -105,26 +100,6 @@ export default function Buyers() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container">
-          <h2 className="text-headline-sm md:text-headline text-foreground mb-10">
-            Pricing expectations
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {pricing.map((tier) => (
-              <div
-                key={tier.type}
-                className="card-elevated rounded-xl p-6 md:p-8 text-center"
-              >
-                <p className="text-body text-muted-foreground mb-2">{tier.type}</p>
-                <p className="text-headline-sm text-foreground">{tier.range}</p>
-                <p className="text-body-sm text-muted-foreground mt-2">{tier.note}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Form */}
       <section className="py-16 md:py-24 section-subtle">
