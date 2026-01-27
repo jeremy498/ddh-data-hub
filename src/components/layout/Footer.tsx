@@ -2,8 +2,7 @@ import { Link } from 'react-router-dom';
 
 const footerLinks = [
   { href: '/trust', label: 'Trust' },
-  { href: '/privacy', label: 'Privacy' },
-  { href: '/terms', label: 'Terms' },
+  { href: '/terms-privacy', label: 'Terms & Privacy' },
 ];
 
 export function Footer() {
