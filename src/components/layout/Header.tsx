@@ -62,6 +62,15 @@ export function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
+            <a
+              href="https://calendly.com/jeremy-digitaldataholdings/ddh-intro"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="outline" size="default">
+                Book a Call
+              </Button>
+            </a>
             <Link to="/request-access">
               <Button variant="hero" size="default">
                 Request Access
@@ -100,7 +109,16 @@ export function Header() {
                   {link.label}
                 </Link>
               ))}
-              <div className="pt-2 mt-2 border-t border-border">
+              <div className="pt-2 mt-2 border-t border-border flex flex-col gap-2">
+                <a
+                  href="https://calendly.com/jeremy-digitaldataholdings/ddh-intro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="outline" className="w-full">
+                    Book a Call
+                  </Button>
+                </a>
                 <Link to="/request-access">
                   <Button variant="hero" className="w-full">
                     Request Access
