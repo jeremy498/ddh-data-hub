@@ -4,7 +4,9 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { ArrowRight, Check } from 'lucide-react';
+import { ArrowRight, Check, Loader2 } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
+import { useToast } from '@/hooks/use-toast';
 
 const dataTypes = [
   'Browsing patterns',
@@ -23,6 +25,8 @@ const timelines = [
 
 export function RequestAccessForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     company: '',
     useCase: '',
@@ -31,10 +35,30 @@ export function RequestAccessForm() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Mock submission
-    setIsSubmitted(true);
+    setIsLoading(true);
+
+    try {
+      const { data, error } = await supabase.functions.invoke('send-access-request-notification', {
+        body: formData,
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      setIsSubmitted(true);
+    } catch (error: any) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: 'Submission failed',
+        description: 'There was an error submitting your request. Please try again.',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   if (isSubmitted) {
@@ -124,9 +148,18 @@ export function RequestAccessForm() {
         />
       </div>
 
-      <Button type="submit" variant="hero" size="lg" className="w-full">
-        Request Access
-        <ArrowRight className="w-4 h-4" />
+      <Button type="submit" variant="hero" size="lg" className="w-full" disabled={isLoading}>
+        {isLoading ? (
+          <>
+            <Loader2 className="w-4 h-4 animate-spin" />
+            Submitting...
+          </>
+        ) : (
+          <>
+            Request Access
+            <ArrowRight className="w-4 h-4" />
+          </>
+        )}
       </Button>
     </form>
   );
