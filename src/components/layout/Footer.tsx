@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ddhLogo from '@/assets/ddh-logo.png';
 
 const footerLinks = [
   { href: '/trust', label: 'Trust' },
@@ -13,9 +14,7 @@ export function Footer() {
           {/* Brand */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">D</span>
-              </div>
+              <img src={ddhLogo} alt="DDH Logo" className="w-8 h-8" />
               <span className="font-semibold text-foreground">Digital Data Holdings</span>
             </div>
             <p className="text-body-sm text-muted-foreground max-w-xs">
